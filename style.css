@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: grey;
+    width: 400px;
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+}
+.sidebar nav{
+    padding: 25px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.name{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.main{
+    background-color :white;
+    width: 80vw;
+}
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    background-color: rgb(240, 255, 108);
+    height: 75vh;
+    width: 70vw;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devPic img{
+    height:75vh;
+}
+
+.devInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name{
+font-size: 3em;
+}
+.hello{
+font-size:3em;
+}
+.about{
+font-size: 2.4em;
+padding-top: 10px;
+}
+.buttons{
+    margin-top: 40px;
+}
+.buttons button{
+      padding:10px 25px;
+      border-radius: 30px;
+      color: white;
+      background-color: cornflowerblue;
+      font-weight: bold;
+      font-size: 20px;
+      margin-left: 20px;
+      cursor: pointer;
+}
+.buttons button:hover{
+ background-color: antiquewhite;
+ color: aqua;
+}
+
+.sidebar ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.contactForm{
+    font-family: 'Corben', cursive;
+    padding-top: 80px;
+    padding: 0 40px;
+}
+
+.contactForm h1{
+ text-align: center;
+ padding: 10px;
+}
+
+.contactForm form div{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input{
+   width: 40vw;
+   border-radius: 20px;
+   margin: 10px 0;
+   padding: 5px;
+}
+
+.contactForm form div.form-text{
+    font-size: 12px;
+    color: blue;
+    margin: 0;padding: 0;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin-top: 10px;
+}
+
+.btn{
+    padding: 8px 8px;
+    border-radius: 15px;
+    background-color: rgb(106, 106, 177);
+    color: antiquewhite;
+}
+.btn:hover{
+    color: rgb(106, 106, 177);
+    background-color: antiquewhite;
+}
+
+.blogItem{
+margin: 20px;
+font-family: 'Palanquin', sans-serif;
+padding: 15px;
+}
+.blogContainer h1{
+    font-family: 'Palanquin', sans-serif;
+    margin-left: 30px;
+    padding-top: 1em;
+    font-size: 50px;
+}
+.blogItem .btn2{
+    padding: 5px 5px;
+    border-radius: 17px;
+    background-color: rgb(96, 96, 120);
+    color: antiquewhite;
+}
+.blogItem .btn2:hover{
+color: rgb(96, 96, 120);
+  background-color: antiquewhite;
+}
+
+.self{
+    font-family: 'Palanquin', sans-serif;
+    margin-left: 30px;
+    font-size: 40px; 
+    font-weight: bold;
+}
+.self-p{
+    margin-left: 30px;
+    padding: 10px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    padding-left: 25px;
+}
+.skill{
+    width: 55px;
+    height: 8px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 125px;
+    background-color: blue;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+.bg{
+    background-color: darkorange;
+    color: white;
+    height: 100vh;
+    margin: 50px;
+    padding-left: 80px;
+}
+.para{
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.bg-img{
+    width: 50vw;
+    height: 70vh;
+    background-image:url('/webpage.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.sidebarGo{
+    transform: translate(-443px , 0);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    left: 5px;
+}
+.cross{
+    margin-left: 330px;
+}
+@media (max-width:1000px) {
+    .sidebar{
+        position: absolute;
+    }
+    .devPic{
+        display: none;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .buttons button{
+        font-size: 14px;
+        border-radius: 3em;
+    }
+}
